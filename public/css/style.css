@@ -2,15 +2,18 @@
     --w:#FFFEF9;
     --b:#1A1A1D;
     --g:#EAE3D6;
+    --gb:#334D5C;
 }
  * {
     padding: 0;
     margin: 0;
+    font-size: small;
 }
 /* -------------------- START HEADER -------------------- */
 header{
     display: grid;
-    background: black;
+    justify-items: center;
+    background: var(--b);
     color: var(--w);
 }
 nav > ul {
@@ -30,8 +33,12 @@ nav > ul img {
 
 /* -------------------- START BANNER -------------------- */
 #banner {
-    background: #334D5C;
+    display: grid;
+    justify-items: center;
+    background: var(--gb);
     color: var(--w);
+    font-size:x-small;
+    padding: 1em;
 }
 #banner img{
     display: none;
@@ -39,19 +46,90 @@ nav > ul img {
 /* -------------------- END BANNER -------------------- */
 
 /* -------------------- START SECTION 1 -------------------- */
-.avantages{
-    background: var(--g);
+section.one{
+    display: grid;
 }
+section.one img{
+    display: none;
+}
+#eclosion{
+    padding: 1em;
+
+}
+section h2 {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 5px;
+    background: var(--gb);
+    color: var(--w);
+}
+.avantages{
+    display: grid;
+    justify-items: center;
+    gap: 10px 10px;
+    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+    background: var(--g);
+    padding: 1em;
+}
+/* .avantage div{
+    width: fit-content;
+} */
 /* -------------------- END SECTION 1 -------------------- */
 
 /* -------------------- START SECTION 2 -------------------- */
-
+section.two{
+    display: grid;
+}
+section.two img{
+    display: none;
+}
+#evolution{
+    padding: 1em;
+}
 /* -------------------- END SECTION 2 -------------------- */
 
 /* -------------------- START SECTION 3 -------------------- */
-
+section.three{
+    display: grid;
+}
+section.three img{
+    display: none;
+}
+#envol{
+    padding: 1em;
+}
 /* -------------------- END SECTION 3 -------------------- */
 
 /* -------------------- START FOOTER -------------------- */
+footer{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3,1fr);
+    background: var(--b);
+    padding: 1em;
+}
+footer > div{
+    display: grid;
+    gap: 1em;
+}
+footer > div > div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: fit-content;
+    gap: 1em;
+}
+footer img {
+    width: 5vw;
+    
+}
+
+.title{
+    color: var(--w);
+}
+.cgv{
+    grid-column: 3/5;
+    right: 0;
+    color: var(--w);
+}
 /* -------------------- END FOOTER -------------------- */
 
