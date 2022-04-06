@@ -1,13 +1,47 @@
+:root{
+    --w:#FFFEF9;
+    --b:#1A1A1D;
+    --g:#EAE3D6;
+}
+ * {
+    padding: 0;
+    margin: 0;
+}
 /* -------------------- START HEADER -------------------- */
-
+header{
+    display: grid;
+    background: black;
+    color: var(--w);
+}
+nav > ul {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--w);
+}
+#brand-img{
+    display: none;
+} 
+nav > ul img {
+    display: none;
+}
 /* -------------------- END HEADER -------------------- */
 
 /* -------------------- START BANNER -------------------- */
-
+#banner {
+    background: #334D5C;
+    color: var(--w);
+}
+#banner img{
+    display: none;
+}
 /* -------------------- END BANNER -------------------- */
 
 /* -------------------- START SECTION 1 -------------------- */
-
+.avantages{
+    background: var(--g);
+}
 /* -------------------- END SECTION 1 -------------------- */
 
 /* -------------------- START SECTION 2 -------------------- */
