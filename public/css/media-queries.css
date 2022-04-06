@@ -92,9 +92,6 @@
     /* -------------------- END BANNER -------------------- */
     
     /* -------------------- START SECTION 1 -------------------- */
-    section.one{
-        
-    }
     #eclosion{
         display: grid;
         gap: 5vw 5vw;
@@ -183,10 +180,16 @@
     * {
         font-size: medium;
     }
+    h3{
+        font-size: medium;
+
+    }
 }
 @media screen and (min-width:1440px){
     * {
         font-size: xx-large;
     }
-    
+    h3{
+        font-size: medium;
+    }
 }
