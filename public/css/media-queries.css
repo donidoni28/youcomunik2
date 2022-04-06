@@ -178,3 +178,15 @@
         ;
     }
 }
+
+@media screen and (min-width:1024px){
+    * {
+        font-size: medium;
+    }
+}
+@media screen and (min-width:1440px){
+    * {
+        font-size: xx-large;
+    }
+    
+}
