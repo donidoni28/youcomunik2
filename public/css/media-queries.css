@@ -1,0 +1,180 @@
+@media screen and (min-width:768px) {
+    :root{
+        --w:#FFFEF9;
+        --b:#1A1A1D;
+        --g:#EAE3D6;
+        --gb:#334D5C;
+    }
+     * {
+        padding: 0;
+        margin: 0;
+        font-size:small;
+    }
+    body{
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 1px 1px 20px 7px #cfc0c0;
+        
+    }
+    /* -------------------- START HEADER -------------------- */
+    #brand-img{
+        width: 20vw;
+        padding-left: 1vw;
+    }
+    header{
+        justify-items: start;
+        align-items: center;
+        grid-template-columns: 1fr 2fr;
+    }
+    nav{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    nav > ul {
+        display: grid;
+        justify-items: center;
+        gap: 3vh 0;
+        grid-template-columns: repeat(6,1fr);
+    }
+    nav ul li{
+        display: grid;
+        justify-items: center;
+        width: fit-content;
+        /* border: 1px solid white; */
+    }
+    nav ul li a{
+        font-size: x-small;
+        color: var(--w);
+    }
+    #brand-img{
+        display: block;
+    } 
+    nav > ul img {
+        display: block;
+        width: 5vw;
+        margin: 0 auto;
+    }
+    /* -------------------- END HEADER -------------------- */
+    
+    /* -------------------- START BANNER -------------------- */
+    #banner {
+        display: grid;
+        gap: 0 2em;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        background: var(--gb);
+        color: var(--w);
+        font-size:x-small;
+        justify-items: start;
+    }
+    #banner-img{
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        /* padding: 0 2; */
+    }
+    #banner img{
+        display: block;
+        /* padding-left: 10vw; */
+        width: 10vw;
+    }
+    #banner h2{
+        letter-spacing: 2px;
+        font-size:medium;
+        font-weight: 400;
+    }
+    #banner h1{
+        letter-spacing: 3px;
+        font-size:x-large;
+        font-weight: 400;
+    }
+    /* -------------------- END BANNER -------------------- */
+    
+    /* -------------------- START SECTION 1 -------------------- */
+    section.one{
+        
+    }
+    #eclosion{
+        display: grid;
+        gap: 5vw 5vw;
+        grid-template-areas: 
+            'h2 h2'
+            'img-l txt-r'
+            'img-l txt-r'
+        ;
+    }
+    section.one img{
+        display: block;
+    }
+    .img-left{
+        grid-area: img-l;
+    }
+    .img-left img{
+        width: 15vw;
+        padding-left: 5vw;
+
+    }
+    .texte-right{
+        grid-area: txt-r;
+        padding: 5vw;
+        padding-top: 0;
+    }
+    section h2 {
+        grid-area: h2;
+        font-size: xx-large;
+        width: 25vw;
+        text-align: center;
+    }
+    .avtg-img {
+        display: block;
+        width: 5vw;
+    }
+    .avantages {
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    }
+    .avantages div {
+        display: grid;
+        justify-items: center;
+    }
+    /* .avantage div{
+        width: fit-content;
+    } */
+    /* -------------------- END SECTION 1 -------------------- */
+    
+    /* -------------------- START SECTION 2 -------------------- */
+    section.two{
+    }
+    section.two img{
+        display: block;
+        
+    }
+    #evolution{
+        display: grid;
+        gap: 5vw 5vw;
+        grid-template-areas: 
+            'h2 h2'
+            'img-l txt-r'
+            'img-l txt-r'
+        ;
+    }
+    div.avantages > div:nth-child(5){
+
+        grid-column: 1/5;
+    }
+    /* -------------------- END SECTION 2 -------------------- */
+    
+    /* -------------------- START SECTION 3 -------------------- */
+    section.three img{
+        display: block;
+    }
+    #envol{
+        display: grid;
+        gap: 5vw 5vw;
+        grid-template-areas: 
+            'h2 h2'
+            'img-l txt-r'
+            'img-l txt-r'
+        ;
+    }
+}
