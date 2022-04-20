@@ -14,39 +14,58 @@
     <!--------------- START HEADER ----------------->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-            <div class="container">
-                <a class="navbar-brand d-lg-block d-none" href="#"><img id="brand-img" src="public/img/logo-horizontal-fond-noir-couleur.png" alt="img">
+            <div class="container p-0 m-0 row row-cols-1 row-cols-lg-2 align-items-center">
+                <a class="navbar-brand d-lg-block d-none col-lg-4" href="#"><img id="brand-img"
+                        src="public/img/logo-horizontal-fond-noir-couleur.png" alt="img">
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse w-100" id="collapsibleNavId">
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 w-100 align-items-center">
-                        <li class="nav-item active">
-                            <img class="link-img d-none d-lg-block" src="public/img/home-icon.png" alt="img">
-                            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+                <div class="collapse navbar-collapse justify-content-end col-lg-6 p-0 m-0" id="collapsibleNavId">
+                    <ul class="navbar-nav d-flex align-items-center">
+                        <li class="nav-item d-md-flex flex-md-column  active">
+                            <img class="link-img d-none d-lg-block align-self-center" src="public/img/home-icon.png"
+                                alt="img">
+                            <a class="nav-link" href="#">
+                                <p class="text-light">HOME</p> <span class="visually-hidden">(current)</span>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <img class="link-img d-none d-lg-block" src="public/img/packages-icon.png" alt="img">
-                            <a class="nav-link" href="#">PACKAGES</a>
+                        <li class="nav-item d-md-flex flex-md-column">
+                            <img class="link-img d-none d-lg-block align-self-center" src="public/img/packages-icon.png"
+                                alt="img">
+                            <a class="nav-link" href="#">
+                                <p class="text-light">PACKAGES</p>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <img class="link-img d-none d-lg-block" src="public/img/outils-icon.png" alt="img">
-                            <a class="nav-link" href="#">OUTILS</a>
+                        <li class="nav-item d-md-flex flex-md-column">
+                            <img class="link-img d-none d-lg-block align-self-center" src="public/img/outils-icon.png"
+                                alt="img">
+                            <a class="nav-link" href="#">
+                                <p class="text-light">OUTILS</p>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <img class="link-img d-none d-lg-block" src="public/img/projets-icon.png" alt="img">
-                            <a class="nav-link" href="#">PROJETS</a>
+                        <li class="nav-item d-md-flex flex-md-column">
+                            <img class="link-img d-none d-lg-block align-self-center" src="public/img/projets-icon.png"
+                                alt="img">
+                            <a class="nav-link" href="#">
+                                <p class="text-light">PROJETS</p>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <img class="link-img d-none d-lg-block" src="public/img/temoignages-icon.png" alt="img">
-                            <a class="nav-link" href="#">TEMOIGNAGES</a>
+                        <li class="nav-item d-md-flex flex-md-column">
+                            <img class="link-img d-none d-lg-block align-self-center"
+                                src="public/img/temoignages-icon.png" alt="img">
+                            <a class="nav-link" href="#">
+                                <p class="text-light">TEMOIGNAGES</p>
+                            </a>
                         </li>
-                        <li class="nav-item">
-                            <img class="link-img d-none d-lg-block" src="public/img/contact-icon.png" alt="img">
-                            <a class="nav-link" href="#">CONTACT</a>
+                        <li class="nav-item d-md-flex flex-md-column">
+                            <img class="link-img d-none d-lg-block align-self-center" src="public/img/contact-icon.png"
+                                alt="img">
+                            <a class="nav-link" href="#">
+                                <p class="text-light">CONTACT</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -55,8 +74,9 @@
     </header>
     <!--------------- END HEADER ----------------->
 
+    <!--------------- START MAIN ----------------->
     <main>
-        <div id="banner" class="d-flex bg-primary text-light p-2 py-md-3">
+        <div id="banner" class="d-flex bg-primary text-light p-md-2 py-md-3">
             <div id="banner-img" class="banner-img d-none d-md-block col-md-1 mx-5">
                 <img src="public/img/packages.png" alt="img">
             </div>
@@ -67,58 +87,61 @@
         </div>
         <!--------------- START SECTION 1   ----------------->
         <section class="one bg-light">
-            <div id="eclosion" class="mt-4 d-md-flex flex-md-column ">
+            <div id="eclosion" class="container-fluid mt-4 d-md-flex flex-md-column ">
                 <h3 class="bg-primary text-light align-self-center py-2 px-5">Ecolosion</h3>
-                <div class="contents row t-2 justify-content-evenly p-md-3">
+                <div class="contents row  justify-content-evenly p-md-3">
                     <div class="img-left col-md-3 d-none d-md-block mx-2 align-self-center">
                         <img class="img-header" src="public/img/icon-eclosion.png" alt="img">
                     </div>
-                    <div class="texte-right col-md-6 p-md-3 pt-2">
+                    <div class="texte-right col-md-6 p-md-3 ">
                         <p>
                             Le pack Eclosiont est parfait pour le début d'une activité. Il comprend la création de votre
-                            identité graphique, incluant votre logo et un support de prospection pour aller à la rencontre vos
+                            identité graphique, incluant votre logo et un support de prospection pour aller à la
+                            rencontre vos
                             futurs clients, ainsi qu'un site internet single page pour avoir une présence en ligne
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="avantages  bg-secondary m-0 p-2 row row-cols-md-4 justify-content-center">
-                <div class="avantage col d-md-flex flex-md-column align-items-center">
-                    <img class="avtg-img d-none d-md-block  " src="public/img/Logo-logo.png" alt="img">
-                    <h4>Logo</h4>
-                </div>
-                <div class="avantage col d-md-flex flex-md-column align-items-center">
-                    <img class="avtg-img d-none d-md-block  " src="public/img/icon-charte-graphic.png" alt="img">
-                    <h4>Charte graphique</h4>
-                </div>
-                <div class="avantage col d-md-flex flex-md-column align-items-center">
-                    <img class="avtg-img d-none d-md-block  " src="public/img/site-single-page.png" alt="img">
-                    <h4>Site single page</h4>
-                </div>
-                <div class="avantage col d-md-flex flex-md-column align-items-center">
-                    <img class="avtg-img d-none d-md-block  " src="public/img/carte-visite.png" alt="img">
-                    <h4>Carte de visite</h4>
-                </div>
+            <div class="avantages  bg-secondary m-0 p-md-2 row row-cols-1 row-cols-1 row-cols-md-4" >
+                <div class=" avantage col d-md-flex flex-md-column align-items-center">
+                <img class="avtg-img d-none d-md-block  " src="public/img/Logo-logo.png" alt="img">
+                <h4 class="text-center text-md-start">Logo</h4>
+            </div>
+            <div class="avantage col d-md-flex flex-md-column align-items-center">
+                <img class="avtg-img d-none d-md-block  " src="public/img/icon-charte-graphic.png" alt="img">
+                <h4 class="text-center text-md-start">Charte graphique</h4>
+            </div>
+            <div class="avantage col d-md-flex flex-md-column align-items-center">
+                <img class="avtg-img d-none d-md-block  " src="public/img/site-single-page.png" alt="img">
+                <h4 class="text-center text-md-start">Site single page</h4>
+            </div>
+            <div class="avantage col d-md-flex flex-md-column align-items-center">
+                <img class="avtg-img d-none d-md-block  " src="public/img/carte-visite.png" alt="img">
+                <h4 class="text-center text-md-start">Carte de visite</h4>
+            </div>
             </div>
         </section>
         <!--------------- END SECTION 1 ----------------->
-    
-    
+
+
         <!--------------- START SECTION 2 ----------------->
         <section class="two bg-light">
-            <div id="evolution" class="mt-4 d-md-flex flex-md-column ">
+            <div id="evolution" class="container-fluid mt-4 d-md-flex flex-md-column ">
                 <h3 class="bg-primary text-light align-self-center py-2 px-5">Evolution</h3>
-                <div class="contens row t-2 justify-content-evenly p-md-3">
+                <div class="contens row  justify-content-evenly p-md-3">
                     <div class="img-left col-md-3 d-none d-md-block mx-2 align-self-center">
                         <img class="img-header " src="public/img/icon-evolution.png" alt="img" srcset="">
                     </div>
-                    <div class="texte-right col-md-6 p-md-3 pt-2">
+                    <div class="texte-right col-md-6 p-md-3 ">
                         <p>
-                            Le pac Evolution vous propose une identité visuelle complète, comprenant la création de votre logo,
+                            Le pac Evolution vous propose une identité visuelle complète, comprenant la création de
+                            votre logo,
                             de la charte graphique et de vos cartes de visite
                         </p>
                         <p>
-                            Il intègre également le développement d'un site vitrine afin d'informer 24/7, d'être contacté,
+                            Il intègre également le développement d'un site vitrine afin d'informer 24/7, d'être
+                            contacté,
                             d'analyser le flux de vos visites,... et de faire unlien vers vos réseaux sociaux.
                         </p>
                     </div>
@@ -126,42 +149,44 @@
                 </div>
             </div>
 
-            <div class="avantages bg-secondary m-0 p-2 row row-cols-md-4 justify-content-center">
-                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+            <div class="avantages bg-secondary m-0 p-md-2 row row-cols-1 row-cols-md-4 justify-content-center">
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/Logo-logo.png" alt="img">
-                    <h4>Logo</h4>
+                    <h4 class="text-center text-md-start">Logo</h4>
                 </div>
-                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/icon-charte-graphic.png" alt="img">
-                    <h4>Charte graphique</h4>
+                    <h4 class="text-center text-md-start">Charte graphique</h4>
                 </div>
-                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/site-vitrine.png" alt="img">
-                    <h4>Site vitrine</h4>
+                    <h4 class="text-center text-md-start">Site vitrine</h4>
                 </div>
-                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/reseaux-sociaux.png" alt="img">
-                    <h4>Réseaux sociaux</h4>
+                    <h4 class="text-center text-md-start">Réseaux sociaux</h4>
                 </div>
-                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/carte-visite.png" alt="img">
-                    <h4>Carte de visite</h4>
+                    <h4 class="text-center text-md-start">Carte de visite</h4>
                 </div>
             </div>
         </section>
         <!--------------- END SECTION 2 ----------------->
-    
+
         <!--------------- START SECTION 3 ----------------->
         <section class="three bg-light">
-            <div id="envol" class="mt-4 d-md-flex flex-md-column ">
+            <div id="envol" class="container-fluid mt-4 d-md-flex flex-md-column ">
                 <h3 class="bg-primary text-light align-self-center py-2 px-5">Envole</h3>
-                <div class="contents row t-2 justify-content-evenly p-md-3">
+                <div class="contents row  justify-content-evenly p-md-3">
                     <div class="img-left col-md-3 d-none d-md-block mx-2 align-self-center">
-                        <img class="img-header d-none d-md-block  " src="public/img/icon-envole.png" alt="img" srcset="">
+                        <img class="img-header d-none d-md-block  " src="public/img/icon-envole.png" alt="img"
+                            srcset="">
                     </div>
-                    <div class="texte-right col-md-6 p-md-3 pt-2">
+                    <div class="texte-right col-md-6 p-md-3">
                         <p>
-                            Le pack Envol est destiné à accroître votre visibilité, clientèle et notoriété, tout en diminuant
+                            Le pack Envol est destiné à accroître votre visibilité, clientèle et notoriété, tout en
+                            diminuant
                             vos coûts et en garantissant le meilleur retour sur investissement.
                         </p>
                         <p>
@@ -172,67 +197,72 @@
 
                 </div>
             </div>
-            <div class="avantages bg-secondary m-0 p-2 row row-cols-md-4 justify-content-center">
+            <div class="avantages bg-secondary m-0 p-2 row row-cols-1 row-cols-md-4 justify-content-center">
                 <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/icon-analyse-flux-web.png" alt="img">
-                    <h4>Analyse du flux web</h4>
+                    <h4 class="text-center text-md-start">Analyse du flux web</h4>
                 </div>
                 <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/icon-campagne-facebook.png" alt="img">
-                    <h4>Campagne Facebook</h4>
+                    <h4 class="text-center text-md-start">Campagne Facebook</h4>
                 </div>
                 <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/icon-campagne-adwords.png" alt="img">
-                    <h4>Campagne Adwords</h4>
+                    <h4 class="text-center text-md-start">Campagne Adwords</h4>
                 </div>
                 <div class="avantage col d-md-flex flex-md-column align-items-center">
                     <img class="avtg-img d-none d-md-block  " src="public/img/icon-campagne-e-mailing.png" alt="img">
-                    <h4>Campagne e-mailing</h4>
+                    <h4 class="text-center text-md-start">Campagne e-mailing</h4>
                 </div>
             </div>
-    
+
         </section>
         <!--------------- END SECTION 3 ----------------->
-    
+
         <!--------------- START FOOTER ----------------->
     </main>
+    <!--------------- END MAIN ----------------->
+
+
+    <!--------------- END FOOTER ----------------->
     <footer class="bg-info">
-        <div class="footer d-flex flex-column align-items-center">
-            <div class="d-flex flex-column align-items-center">
-                <h3 class="title p-1 m-1 text-light">Packs</h3>
-                <div class="">
-                    <div class="footer-img d-flex justify-content-center p-2">
+        <div class="footer container row row-cols-1 row-cols-md-3">
+            <div>
+                <h3 class="title p-1 m-1 text-light text-center text-md-start">Packs</h3>
+                <div class=" d-md-flex ">
+                    <div class="footer-img d-flex  justify-content-center p-2">
                         <img src="public/img/icon-eclosion.png" alt="img">
                     </div>
-                    <div class="footer-img d-flex justify-content-center p-2">
-                        <img src="public/img/icon-evolution.png" alt="img">
-                    </div>
-                    <div class="footer-img d-flex justify-content-center p-2">
+                    <div class="footer-img d-flex  justify-content-center p-2">
                         <img src="public/img/icon-envole.png" alt="img">
+                    </div>
+                    <div class="footer-img d-flex  justify-content-center p-2">
+                        <img src="public/img/icon-evolution.png" alt="img">
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
-                <h3 class="title p-1 m-1 text-light">Outils</h3>
-                <div>
-                    <div class="footer-img d-flex justify-content-center p-2">
+            <div>
+                <h3 class="title p-1 m-1 text-light text-center text-md-start">Outils</h3>
+                <div class=" d-md-flex">
+                    <div class="footer-img d-flex  justify-content-center p-2">
                         <img src="public/img/identite-graphique.png" alt="img">
                     </div>
-                    <div class="footer-img d-flex justify-content-center p-2">
+                    <div class="footer-img d-flex  justify-content-center p-2">
                         <img src="public/img/reseaux-sociaux.png" alt="img">
                     </div>
-                    <div class="footer-img d-flex justify-content-center p-2">
+                    <div class="footer-img d-flex  justify-content-center p-2">
                         <img src="public/img/print.png" alt="img">
                     </div>
                 </div>
             </div>
-            <div class="d-flex flex-column align-items-center">
-                <h3 class="title p-1 m-1 text-light">Social media</h3>
-                <div>
-                    <div class="footer-img d-flex justify-content-center p-2">
+
+            <div>
+                <h3 class="title p-1 m-1 text-light text-center text-md-start">Social media</h3>
+                <div class=" d-md-flex">
+                    <div class="footer-img d-flex  justify-content-center p-2">
                         <img src="public/img/social-f.png" alt="img">
                     </div>
-                    <div class="footer-img d-flex justify-content-center p-2">
+                    <div class="footer-img d-flex  justify-content-center p-2">
                         <img src="public/img/google-plus.png" alt="img">
                     </div>
                 </div>
@@ -244,7 +274,9 @@
     </footer>
     <!--------------- END FOOTER ----------------->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
