@@ -1,201 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="public/css/style.css">
-    <link rel="stylesheet" href="public/css/media-queries.css">
+    <!-- <link rel="stylesheet" href="public/css/media-queries.css"> -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!--------------- START HEADER ----------------->
     <header>
-        <div id="brand-div">
-            <img id="brand-img" src="public/img/logo-horizontal-fond-noir-couleur.png" alt="img">
-        </div>
-        <nav>
-            <ul>
-                <li><img class="link-img" src="public/img/home-icon.png" alt="img"><a href="#">HOME</a></li>
-                <li><img class="link-img" src="public/img/packages-icon.png" alt="img"><a href="#">PACKAGES</a></li>
-                <li><img class="link-img" src="public/img/outils-icon.png" alt="img"><a href="#">OUTILS</a></li>
-                <li><img class="link-img" src="public/img/projets-icon.png" alt="img"><a href="#">PROJETS</a></li>
-                <li><img class="link-img" src="public/img/temoignages-icon.png" alt="img"><a href="#">TEMOIGNAGES</a></li>
-                <li><img class="link-img" src="public/img/contact-icon.png" alt="img"><a href="#">CONTACT</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+            <div class="container">
+                <a class="navbar-brand d-lg-block d-none" href="#"><img id="brand-img" src="public/img/logo-horizontal-fond-noir-couleur.png" alt="img">
+                </a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse w-100" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0 w-100 align-items-center">
+                        <li class="nav-item active">
+                            <img class="link-img d-none d-lg-block" src="public/img/home-icon.png" alt="img">
+                            <a class="nav-link" href="#">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="link-img d-none d-lg-block" src="public/img/packages-icon.png" alt="img">
+                            <a class="nav-link" href="#">PACKAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="link-img d-none d-lg-block" src="public/img/outils-icon.png" alt="img">
+                            <a class="nav-link" href="#">OUTILS</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="link-img d-none d-lg-block" src="public/img/projets-icon.png" alt="img">
+                            <a class="nav-link" href="#">PROJETS</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="link-img d-none d-lg-block" src="public/img/temoignages-icon.png" alt="img">
+                            <a class="nav-link" href="#">TEMOIGNAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <img class="link-img d-none d-lg-block" src="public/img/contact-icon.png" alt="img">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!--------------- END HEADER ----------------->
-    <div id="banner">
-        <div id="banner-img">
-            <img src="public/img/packages.png" alt="img">
-        </div>
-        <div>
-            <h1>A chaque étape son pack</h1>
-            <h2>naître, grandir et prospérer.</h2>
-        </div>
-    </div>
-    <!--------------- START SECTION 1   ----------------->
-    <section class="one">
-        <div id="eclosion">
-            <h2>Ecolosion</h2>
-            <div class="img-left">
-                <img class="img-header" src="public/img/icon-eclosion.png" alt="img">
-            </div>
-            <div class="texte-right">           
-                <p>
-                    Le pack Eclosiont est parfait pour le début d'une activité. Il comprend la création de votre identité graphique, incluant votre logo et un support de prospection pour aller à la rencontre vos futurs clients, ainsi qu'un site internet single page pour avoir une présence en ligne
-                </p>
-            </div>
-        </div>
-        <div class="avantages">
-            <div>
-                <img class="avtg-img" src="public/img/Logo-logo.png" alt="img">
-                <h3>Logo</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/icon-charte-graphic.png" alt="img">
-                <h3>Charte graphique</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/site-single-page.png" alt="img">
-                <h3>Site single page</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/carte-visite.png" alt="img">
-                <h3>Carte de visite</h3>
-            </div>
-        </div>
-    </section>
-    <!--------------- END SECTION 1 ----------------->
 
+    <main>
+        <div id="banner" class="d-flex bg-primary text-light p-2 py-md-3">
+            <div id="banner-img" class="banner-img d-none d-md-block col-md-1 mx-5">
+                <img src="public/img/packages.png" alt="img">
+            </div>
+            <div class="col-md-7">
+                <h1>A chaque étape son pack</h1>
+                <h2>naître, grandir et prospérer.</h2>
+            </div>
+        </div>
+        <!--------------- START SECTION 1   ----------------->
+        <section class="one bg-light">
+            <div id="eclosion" class="mt-4 d-md-flex flex-md-column ">
+                <h3 class="bg-primary text-light align-self-center py-2 px-5">Ecolosion</h3>
+                <div class="contents row t-2 justify-content-evenly p-md-3">
+                    <div class="img-left col-md-3 d-none d-md-block mx-2 align-self-center">
+                        <img class="img-header" src="public/img/icon-eclosion.png" alt="img">
+                    </div>
+                    <div class="texte-right col-md-6 p-md-3 pt-2">
+                        <p>
+                            Le pack Eclosiont est parfait pour le début d'une activité. Il comprend la création de votre
+                            identité graphique, incluant votre logo et un support de prospection pour aller à la rencontre vos
+                            futurs clients, ainsi qu'un site internet single page pour avoir une présence en ligne
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="avantages  bg-secondary m-0 p-2 row row-cols-md-4 justify-content-center">
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/Logo-logo.png" alt="img">
+                    <h4>Logo</h4>
+                </div>
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/icon-charte-graphic.png" alt="img">
+                    <h4>Charte graphique</h4>
+                </div>
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/site-single-page.png" alt="img">
+                    <h4>Site single page</h4>
+                </div>
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/carte-visite.png" alt="img">
+                    <h4>Carte de visite</h4>
+                </div>
+            </div>
+        </section>
+        <!--------------- END SECTION 1 ----------------->
     
-    <!--------------- START SECTION 2 ----------------->
-    <section class="two">
-        <div id="evolution">
-            <h2>Evolution</h2>
-            <div class="img-left">
-                <img class="img-header" src="public/img/icon-evolution.png" alt="img" srcset="">
-            </div>
-            <div class="texte-right">
-                <p>
-                    Le pac Evolution vous propose une identité visuelle complète, comprenant la création de votre logo, de la charte graphique et de vos cartes de visite
-                </p>
-                <p>
-                    Il intègre également le développement d'un site vitrine afin d'informer 24/7, d'être contacté, d'analyser le flux de vos visites,... et de faire unlien vers vos réseaux sociaux.
-                </p>
-            </div>
-        </div>
-        <div class="avantages">
-            <div>
-                <img class="avtg-img" src="public/img/Logo-logo.png" alt="img">
-                <h3>Logo</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/icon-charte-graphic.png" alt="img">
-                <h3>Charte graphique</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/site-vitrine.png" alt="img">
-                <h3>Site vitrine</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/reseaux-sociaux.png" alt="img">
-                <h3>Réseaux sociaux</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/carte-visite.png" alt="img">
-                <h3>Carte de visite</h3>
-            </div>
-        </div>
-    </section>
-    <!--------------- END SECTION 2 ----------------->
+    
+        <!--------------- START SECTION 2 ----------------->
+        <section class="two bg-light">
+            <div id="evolution" class="mt-4 d-md-flex flex-md-column ">
+                <h3 class="bg-primary text-light align-self-center py-2 px-5">Evolution</h3>
+                <div class="contens row t-2 justify-content-evenly p-md-3">
+                    <div class="img-left col-md-3 d-none d-md-block mx-2 align-self-center">
+                        <img class="img-header " src="public/img/icon-evolution.png" alt="img" srcset="">
+                    </div>
+                    <div class="texte-right col-md-6 p-md-3 pt-2">
+                        <p>
+                            Le pac Evolution vous propose une identité visuelle complète, comprenant la création de votre logo,
+                            de la charte graphique et de vos cartes de visite
+                        </p>
+                        <p>
+                            Il intègre également le développement d'un site vitrine afin d'informer 24/7, d'être contacté,
+                            d'analyser le flux de vos visites,... et de faire unlien vers vos réseaux sociaux.
+                        </p>
+                    </div>
 
-    <!--------------- START SECTION 3 ----------------->
-    <section class="three">
-        <div id="envol">
-            <h2>Envole</h2>
-            <div class="img-left">
-                <img class="img-header" src="public/img/icon-envole.png" alt="img" srcset="">
+                </div>
             </div>
-            <div class="texte-right">
-                <p>
-                    Le pack Envol est destiné à accroître votre visibilité, clientèle et notoriété, tout en diminuant vos coûts et en garantissant le meilleur retour sur investissement.
-                </p>
-                <p>
-                    Il comporte un service d'analyse de votre cible et des flux de votre trafic internet, afin d'utiliser les paramètres les plus adéquats pour la diffusion de vos campagnes.
-                </p>
-            </div>
-        </div>
-        <div class="avantages">
-            <div>
-                <img class="avtg-img" src="public/img/icon-analyse-flux-web.png" alt="img">
-                <h3>Analyse du flux web</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/icon-campagne-facebook.png" alt="img">
-                <h3>Campagne Facebook</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/icon-campagne-adwords.png" alt="img">
-                <h3>Campagne Adwords</h3>
-            </div>
-            <div>
-                <img class="avtg-img" src="public/img/icon-campagne-e-mailing.png" alt="img">
-                <h3>Campagne e-mailing</h3>
-            </div>
-        </div>
 
-    </section>
-    <!--------------- END SECTION 3 ----------------->
+            <div class="avantages bg-secondary m-0 p-2 row row-cols-md-4 justify-content-center">
+                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/Logo-logo.png" alt="img">
+                    <h4>Logo</h4>
+                </div>
+                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/icon-charte-graphic.png" alt="img">
+                    <h4>Charte graphique</h4>
+                </div>
+                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/site-vitrine.png" alt="img">
+                    <h4>Site vitrine</h4>
+                </div>
+                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/reseaux-sociaux.png" alt="img">
+                    <h4>Réseaux sociaux</h4>
+                </div>
+                <div class="avantage avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/carte-visite.png" alt="img">
+                    <h4>Carte de visite</h4>
+                </div>
+            </div>
+        </section>
+        <!--------------- END SECTION 2 ----------------->
+    
+        <!--------------- START SECTION 3 ----------------->
+        <section class="three bg-light">
+            <div id="envol" class="mt-4 d-md-flex flex-md-column ">
+                <h3 class="bg-primary text-light align-self-center py-2 px-5">Envole</h3>
+                <div class="contents row t-2 justify-content-evenly p-md-3">
+                    <div class="img-left col-md-3 d-none d-md-block mx-2 align-self-center">
+                        <img class="img-header d-none d-md-block  " src="public/img/icon-envole.png" alt="img" srcset="">
+                    </div>
+                    <div class="texte-right col-md-6 p-md-3 pt-2">
+                        <p>
+                            Le pack Envol est destiné à accroître votre visibilité, clientèle et notoriété, tout en diminuant
+                            vos coûts et en garantissant le meilleur retour sur investissement.
+                        </p>
+                        <p>
+                            Il comporte un service d'analyse de votre cible et des flux de votre trafic internet, afin
+                            d'utiliser les paramètres les plus adéquats pour la diffusion de vos campagnes.
+                        </p>
+                    </div>
 
-    <!--------------- START FOOTER ----------------->
-    <footer>
-        <div class="footer">
-            <div>
-                <p class="title">Packs</p>
-                <div>
-                    <div class="footer-img">
+                </div>
+            </div>
+            <div class="avantages bg-secondary m-0 p-2 row row-cols-md-4 justify-content-center">
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/icon-analyse-flux-web.png" alt="img">
+                    <h4>Analyse du flux web</h4>
+                </div>
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/icon-campagne-facebook.png" alt="img">
+                    <h4>Campagne Facebook</h4>
+                </div>
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/icon-campagne-adwords.png" alt="img">
+                    <h4>Campagne Adwords</h4>
+                </div>
+                <div class="avantage col d-md-flex flex-md-column align-items-center">
+                    <img class="avtg-img d-none d-md-block  " src="public/img/icon-campagne-e-mailing.png" alt="img">
+                    <h4>Campagne e-mailing</h4>
+                </div>
+            </div>
+    
+        </section>
+        <!--------------- END SECTION 3 ----------------->
+    
+        <!--------------- START FOOTER ----------------->
+    </main>
+    <footer class="bg-info">
+        <div class="footer d-flex flex-column align-items-center">
+            <div class="d-flex flex-column align-items-center">
+                <h3 class="title p-1 m-1 text-light">Packs</h3>
+                <div class="">
+                    <div class="footer-img d-flex justify-content-center p-2">
                         <img src="public/img/icon-eclosion.png" alt="img">
                     </div>
-                    <div class="footer-img">
+                    <div class="footer-img d-flex justify-content-center p-2">
                         <img src="public/img/icon-evolution.png" alt="img">
                     </div>
-                    <div class="footer-img">
+                    <div class="footer-img d-flex justify-content-center p-2">
                         <img src="public/img/icon-envole.png" alt="img">
                     </div>
                 </div>
             </div>
-            <div>
-                <p class="title">Outils</p>
+            <div class="d-flex flex-column align-items-center">
+                <h3 class="title p-1 m-1 text-light">Outils</h3>
                 <div>
-                    <div class="footer-img">
+                    <div class="footer-img d-flex justify-content-center p-2">
                         <img src="public/img/identite-graphique.png" alt="img">
                     </div>
-                    <div class="footer-img">
+                    <div class="footer-img d-flex justify-content-center p-2">
                         <img src="public/img/reseaux-sociaux.png" alt="img">
                     </div>
-                    <div class="footer-img">
+                    <div class="footer-img d-flex justify-content-center p-2">
                         <img src="public/img/print.png" alt="img">
                     </div>
                 </div>
             </div>
-            <div>
-                <p class="title">Social media</p>
+            <div class="d-flex flex-column align-items-center">
+                <h3 class="title p-1 m-1 text-light">Social media</h3>
                 <div>
-                    <div class="footer-img">
+                    <div class="footer-img d-flex justify-content-center p-2">
                         <img src="public/img/social-f.png" alt="img">
                     </div>
-                    <div class="footer-img">
+                    <div class="footer-img d-flex justify-content-center p-2">
                         <img src="public/img/google-plus.png" alt="img">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="cgv">
+        <div class="cgv d-flex justify-content-end pe-1 text-light">
             <p>c.g.v</p>
         </div>
     </footer>
     <!--------------- END FOOTER ----------------->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
 </html>
